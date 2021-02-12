@@ -1,0 +1,280 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background: #ffffff;
+    font-family: Arial;
+}
+
+h1{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+#bloque{
+    background: #85d4b7;
+    border: #85d4b7 15px solid;
+}
+
+#bloque2{
+    background: #6dccaa;
+    border: #6dccaa 50px solid;
+}
+
+#bloque3{
+    background: #6dccaa;
+    border: #6dccaa 50px solid;
+}
+
+.menu-main{
+    display: flex;
+    justify-content: space-between;
+    background: #85d4b7;
+    border-bottom: 1px solid #85d4b7;
+    height: 65px;
+}
+
+.menu-main a{
+    flex: 1;
+    font-family: arial;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;    
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-main a:hover{
+    background: rgba(0,0,0, .1);
+}
+
+.menu-main a.active{
+    background-color: #85d4b7;
+}
+
+@media (max-width: 768px) {
+    
+    .menu-main{
+        height: auto;
+        border-bottom: 0px;
+        display: block;
+    }
+    
+    .menu-main a{
+        height: 45px;
+        border-bottom: 1px solid #85d4b7;
+    }
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ .media { 
+    min-width: 0;
+    margin: 5px;
+ }
+
+ ul,ol{
+     list-style: none;
+ }
+
+ .slideshow{
+     width: 100%;
+     position: relative;
+ }
+
+ .slider li, ul{
+     width: 100%;
+ }
+
+ .slider li, #foto1,#foto2,#foto3{
+    width: 100%;
+}
+
+.slider .caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    flex-direction: column;
+    padding: 15px 50px;
+}
+
+.slider .caption h1{
+    font-size: 50px;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+    -webkit-text-stroke: 2px black;
+    font-family: impact;
+}
+
+.slider .caption b{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #000;
+    text-shadow: -1px -1px 1px #ffffff, 1px 1px 1px #ffffff, -1px 1px 1px #ffffff, 1px -1px 1px #ffffff;
+}
+
+.pagination{
+    position: absolute;
+    top: 102%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li{
+    font-size: 20px;
+    margin: 2px 5px;
+    color: #9B9B9B;
+    cursor: pointer;
+}
+
+.left, .right{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.left{
+    left: 10px;
+}
+
+.right{
+    right: 10px;
+}
+
+@media screen and (max-width: 681px){
+    .slider .caption p{
+        display: none;
+    }
+    .slider .caption h1{
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+
+    .redes img{
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .galeria img{
+        width: 90%;
+    }
+}
+
+.box img{
+    width: 300px;
+    height: 250px;
+}
+
+.box2 img{
+    margin: 2px;
+}
+
+.box2{
+    text-align: right;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h4{
+    padding: 5px;
+    border: black 2px solid;
+    width: 105px;
+}
+
+#bloque3 h2{
+    color: #ffffff;
+    text-align: center;
+}
+
+.descripcion{
+    color: red;
+}
+
+.galeria{
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria li{
+    margin: 5px;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.modal_img{
+    width: auto;
+}
+
+#cross{
+    width: 50px;
+    height: 50px;
+    color: #6dccaa;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 25px;
+}
+
+.bloque4{
+    background: #ebebeb;
+}
+
+.bloque4 p{
+    margin: 15px;
+}
